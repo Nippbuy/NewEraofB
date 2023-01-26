@@ -20,7 +20,7 @@ class Dropdown(discord.ui.Select):
     async def callback(self, interaction: discord.Interaction):
         try:
             if self.values[0] == "Зелёный":
-                embed = discord.Embed(title="Использование команды \"color\" !", description=f"**Ваш любимый цвет - `{self.values[0]}🟩**`", color=0x70b461)
+                embed = discord.Embed(title="Использование команды \"color\" !", description=f"**Ваш любимый цвет - `{self.values[0]}🟩`**", color=0x70b461)
             elif self.values[0] == "Красный":
                 embed = discord.Embed(title="Использование команды \"color\" !", description=f"**Ваш любимый цвет - `{self.values[0]}🟥`**", color=0xe22943)
             elif self.values[0] == "Синий":
